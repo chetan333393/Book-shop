@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.home {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(243, 41, 41, 0.5), #050700), url("home.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    text-align: center;
+}
+
+.logo-i {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 6%;
+    left: 10%;
+    z-index: 1;
+}
+
+.home-nav {
+    position: absolute;
+    right: 0;
+    top: 8%;
+}
+
+.home-nav ul {
+    display: flex;
+    padding: 0 100px;
+    gap: 50px;
+}
+
+.home-nav ul li {
+    list-style: none;
+}
+
+.home-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.fa-bars {
+    color: white;
+    position: absolute;
+    top: -100%;
+}
+
+.home-nav ul li a:hover {
+    color: burlywood;
+}
+
+.home-text {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50% -50%);
+    width: 50%;
+}
+
+.home-text h1 {
+    color: white;
+    font-size: 4rem;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home-text p {
+    color: white;
+    line-height: 1.4;
+    padding-bottom: 40px;
+}
+
+.home-text h1 span {
+    color: rgb(236, 236, 122);
+}
+
+.home-text a {
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.home-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-btns a:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:770px) {
+    .home {
+        width: 100%;
+    }
+
+    .home-nav {
+        display: none;
+    }
+
+    .home-text {
+        top: 40%;
+        left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .home-text h1 {
+        font-size: 3rem
+    }
+
+    .home-nav ul i {
+        display: block;
+        color: white;
+
+    }
+
+    .fa-bars {
+        top: 7%;
+        right: 10%;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+.books {
+    width: 100%;
+}
+
+.books-section {
+    width: 80%;
+    background-color: yellow;
+}
+
+.books-section h1 {
+    margin: auto;
+}
+
+.about {
+    padding: 80px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex-basis: 30%;
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 500px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(243, 41, 41, 0.5), #050700);
+}
+
+.about-text h1 {
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.about-text p {
+    line-height: 1.5;
+    padding-bottom: 8px;
+}
+
+.about-text i {
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white;
+    background-color: lightgreen;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.about-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.about-img p {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.about-text a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.about-img:hover p {
+    border: 5px;
+    height: 100%;
+    z-index: 1;
+    transition: .2s ease-in-out;
+    background: linear-gradient(rgba(243, 41, 41, 0.5), #050700);
+}
+
+.about-text i:hover {
+    transform: translateY(-7px);
+    background-color: blue;
+}
+
+@media screen and (max-width:770px) {
+    .about-text {
+        flex-basis: 100%;
+        padding: 0 10px;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about-img {
+        padding: 0 10px;
+    }
+}
+
+.books {
+    width: 100%;
+    padding: 80px 150px;
+}
+
+.books-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.books h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 150px;
+    border-bottom: 1px solid black;
+    color:blue;
+}
+
+.books-sec1 {
+    flex-basis: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+}
+
+.books-sec1 img {
+    padding-top: 20px;
+}
+
+.books-sec1 p {
+    line-height: 1.2;
+    color: grey;
+    font-size: 14px;
+    padding: 5px 20px;
+}
+
+.books-sec1 button {
+    padding: 12px 15px;
+    margin: 15px 10px;
+    border-radius: 80px;
+    border: none;
+    background-color: rgb(9, 9, 250);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.books-sec1 i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 8px;
+    background-color: blue;
+    color: white;
+    border-bottom-left-radius: 10px;
+}
+
+.books-sec1 button:hover {
+    transform: scale(1.1);
+}
+
+.books-2 {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background-color: orange;
+    margin-top: 40px;
+    position: relative;
+}
+
+.books-2 h1 {
+    color: blue;
+}
+
+.holyphotos {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 50px 250px;
+    background-color: orange;
+}
+
+.holyphotos img {
+    max-width: 100%;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.offer-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.offer-img img {
+    width: 200px;
+    border-bottom-left-radius: 50px;
+}
+
+.holyphotos img:nth-child(2) {
+    width: 145px;
+}
+
+.holyphotos img:nth-child(3) {
+    width: 140px;
+}
+
+.holyphotos img:nth-child(4) {
+    width: 155px;
+}
+
+.holyphotos img:nth-child(5) {
+    width: 155px;
+}
+
+.book-btn button {
+    padding: 15px 45px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+.book-btn button:hover {
+    transform: scale(1.1);
+    transition: .2s ease-out
+}
+
+@media screen and (max-width:770px) {
+    .books-sec1 {
+        flex-basis: 100%;
+    }
+    .books{
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .books-container {
+        flex-direction: column;
+    }
+    .books-2{
+        padding: 0 10px;
+    }
+    .holyphotos {
+        flex-direction: column;
+        padding: 0 0;
+        flex-basis: 100%;
+    }
+
+    .holyphotos img {
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .holyphotos img:nth-child(2) {
+        width: 100%;
+    }
+
+    .holyphotos img:nth-child(3) {
+        width: 100%;
+    }
+
+    .holyphotos img:nth-child(4) {
+        width: 100%;
+    }
+
+    .holyphotos img:nth-child(5) {
+        width: 100%;
+    }
+
+    .holyphotos img:nth-child(6) {
+        width: 100%;
+    }
+
+    .offer-img img {
+        width: 70px;
+    }
+}
+.service {
+    padding: 100px 200px;
+}
+.service h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.service p{
+    text-align: center;
+    padding: 0 300px;
+    color: grey;
+}
+.service-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+.service-box p{
+    padding: 5px 0;
+    text-align: center;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+.service-box h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.box-img img{
+    border-radius: 10px;
+    width: 200px;
+}
+
+.box-text a{
+    text-decoration: none;
+    color: blue;
+    border: 1.5px solid blue;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+.box-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.box-text a:hover{
+    background-color: blue;
+    color: white;
+    transition: .5s;
+}
+.service-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  column-gap: 30px;
+  text-align: center;
+}
+.box-img2 img{
+    width: 138px;
+    border-radius: 20px;
+}
+.box-img3 img{
+    width: 114px;
+}
+@media screen and (max-width:770px) {
+    .service-info{
+        grid-template-columns: 1fr;
+    }
+    .service{
+        padding: 40px 20px;
+    }
+    .service p{
+        padding: 0 20px;
+    }
+}
+.footer{
+    width: 100%;
+    padding: 30px 200px;
+    background-color: rgb(45, 43, 43);
+}
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footer-info{
+    text-align: center;
+}
+.footer-info h1{
+    color: white;
+    margin-block: 20px;
+    border-bottom: 1px solid white;
+}
+.footer ul li{
+    list-style: none;
+    padding-block: 10px;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.contact-icons{
+  text-align: center;
+  padding-top: 50px;
+  color: white;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.contact-icons i{
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.contact-icons i:nth-child(1){
+    padding: 10px 12px;
+}
+.contact-icons i:hover{
+    background-color: blue;
+    transition: .2s;
+    border: 1px solid blue;
+    transform: scale(1.2);
+}
+.footer ul li a:hover{
+     text-decoration: underline;
+}
+.footer ul li a:active{
+    color: blue;
+}
+.small-info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+@media screen and (max-width:770px){
+    .footer{
+        padding: 10px 20px;
+    }
+    .footer-box{
+        flex-direction: column;
+    }
+}
